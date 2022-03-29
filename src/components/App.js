@@ -7,6 +7,26 @@ import Investments from "./Investments";
 function App() {  
   const [defaultLink, setDefaultLink] = useState(null)
 
+  const [savings,setSavings]=useState([])
+  
+  function postData(formdata){
+   fetch(`urlhttp://localhost:8004/user`, {
+       method: "POST",
+       headers: {
+           "Content-Type": "application/json",
+           Accept: "application/json"
+       },
+       body: JSON.stringify({
+           formdata
+       })
+   })
+   .then( res => res.json())
+   .then( data => setSavings(data))
+   .catch( error => console.log(error.message));
+
+  }
+
+
   return (
   <div>
     <nav>
@@ -18,7 +38,7 @@ function App() {
 
     <Routes>
           <Route path='/' element={<Navigate replace to='/financial'/>}/>
-          <Route path="financial" element={<Form />} />
+          <Route path="financial" element={<Form postData={postData}/>} />
           <Route path="investments" element={<Investments />} />
           <Route path="about" element={<About />} />
           <Route
@@ -28,7 +48,7 @@ function App() {
                 <p>There's nothing here!</p>
               </main>
           }/>
-      </Routes> 
+    </Routes>
   </div>      
   );
 }
