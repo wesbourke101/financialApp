@@ -1,0 +1,57 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "date": "mm/dd/yyyy",
+      "username": "",
+      "income": "",
+      "rent": 0,
+      "expenses": 0,
+      "savings": 0
+    },
+    {
+      "formdata": {
+        "date": "2022-03-29",
+        "username": "Jaredg",
+        "income": "2000",
+        "rent": "200",
+        "expenses": "200",
+        "savings": "200"
+      },
+      "id": 2
+    },
+    {
+      "formdata": {
+        "date": "2022-03-29",
+        "username": "Jaredg",
+        "income": "2000",
+        "rent": "200",
+        "expenses": "200",
+        "savings": "200"
+      },
+      "id": 3
+    },
+    {
+      "formdata": {
+        "date": "2022-03-29",
+        "username": "Jaredg",
+        "income": "2000",
+        "rent": "200",
+        "expenses": "200",
+        "savings": "200"
+      },
+      "id": 4
+    },
+    {
+      "formdata": {
+        "date": "2022-03-29",
+        "username": "Jaredg",
+        "income": "2000",
+        "rent": "200",
+        "expenses": "200",
+        "savings": "200"
+      },
+      "id": 5
+    }
+  ]
+}

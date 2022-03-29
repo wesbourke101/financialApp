@@ -1,8 +1,9 @@
 import React,{useState}from 'react'
 
+
 function Form({postData}) {
     const[formData,SetFormData]=useState({
-        date:0,
+        date:"mm-dd-yyyy",
         username:"",
         income:0,
         rent:0,
@@ -28,13 +29,13 @@ function Form({postData}) {
   return (
     <div>
         <form onSubmit={handleSubmit} className="new-saving-form">
-            <input onChange={handleChange} type="date" name ="date" placeholder="date" Value={date}></input>
-            <input onChange={handleChange} type="text" name ="username" placeholder="username" Value={username}></input>
-            <input onChange={handleChange} type="number" name ="income" placeholder="income" Value={income}></input>
-            <input onChange={handleChange} type="number" name ="rent" placeholder="Rent" Value={rent}></input>
-            <input onChange={handleChange} type="number" name ="Expenses" placeholder="Expenses" Value={expenses}></input>
-            <input onChange={handleChange} type="number" name ="Savings" placeholder="Savings" Value={savings}></input>
-            <input type="submit" value="New Form" />
+            <input onChange={handleChange} type="date" name ="date" placeholder="date" value={date}></input>
+            <input onChange={handleChange} type="text" name ="username" placeholder="username" value={username}></input>
+            <input onChange={handleChange} type="number" name ="income" placeholder="income" value={income}></input>
+            <input onChange={handleChange} type="number" name ="rent" placeholder="Rent" value={rent}></input>
+            <input onChange={handleChange} type="number" name ="expenses" placeholder="Expenses" value={expenses}></input>
+            <input onChange={handleChange} type="number" name ="savings" placeholder="Savings" value={savings}></input>
+            <input type="submit" value="Submit" />
         </form>
     </div>
   )
