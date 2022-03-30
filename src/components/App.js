@@ -1,5 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import { Router, Routes, Route, Link, Outlet, Navigate } from "react-router-dom";
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
 import About from './About'
 import Form from "./Form"
 import Investments from "./Investments";
@@ -18,36 +20,45 @@ function App() {
   },[])
   
   function postData(formdata){
+    //console.log(formdata)
    fetch(`http://localhost:3000/user`, {
        method: "POST",
        headers: {
            "Content-Type": "application/json",
            Accept: "application/json"
        },
-       body: JSON.stringify({
+       body: JSON.stringify(
            formdata
-       })
+       )
    })
    .then( res => res.json())
-   .then( data => setSavings([...savings,data]))
+   .then( data => setSavings([...savings, data]))
    .catch( error => console.log(error.message));
-
   }
-
 
   return (
   <div>
-    <nav>
-      <Link to="/financial"> Financial-Form </Link>
-      <Link to="/investments"> Investments </Link>
-      <Link to="/about"> About </Link>
-    </nav>
+    <Box sx={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        typography: 'body1',
+        '& > :not(style) + :not(style)': {
+          ml: 2,
+        },
+    }}>
+        <Paper id="Paper" sx={{ padding: 1,}}>
+          <Link className='link' to="/financial"> Financial-Form </Link>
+          <Link className='link' to="/investments"> Investments </Link>
+          <Link className='link' to="/about"> About </Link>
+        </Paper>
+      </Box>
     <Outlet />
 
     <Routes>
           <Route path='/' element={<Navigate replace to='/financial'/>}/>
           <Route path="financial" element={<Form postData={postData}/>} />
-          <Route path="investments" element={<Investments />} />
+          <Route path="investments" element={<Investments savings={savings} />} />
           <Route path="about" element={<About />} />
           <Route
             path="*"

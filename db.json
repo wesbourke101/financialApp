@@ -2,56 +2,93 @@
   "user": [
     {
       "id": 1,
-      "date": "mm/dd/yyyy",
-      "username": "",
-      "income": "",
-      "rent": 0,
-      "expenses": 0,
-      "savings": 0
+      "date": "2022-03-16",
+      "username": "wes",
+      "income": 6000,
+      "rent": 3000,
+      "expenses": 1500,
+      "savings": 25000
     },
     {
-      "formdata": {
-        "date": "2022-03-29",
-        "username": "Jaredg",
-        "income": "2000",
-        "rent": "200",
-        "expenses": "200",
-        "savings": "200"
-      },
+      "date": "2022-03-31",
+      "username": "wes",
+      "income": "3000",
+      "rent": "1500",
+      "expenses": "2000",
+      "savings": 0,
       "id": 2
     },
     {
-      "formdata": {
-        "date": "2022-03-29",
-        "username": "Jaredg",
-        "income": "2000",
-        "rent": "200",
-        "expenses": "200",
-        "savings": "200"
-      },
+      "date": "2022-03-09",
+      "username": "Tom",
+      "income": "3000",
+      "rent": "2000",
+      "expenses": "100",
+      "savings": "100",
       "id": 3
     },
     {
-      "formdata": {
-        "date": "2022-03-29",
-        "username": "Jaredg",
-        "income": "2000",
-        "rent": "200",
-        "expenses": "200",
-        "savings": "200"
-      },
+      "date": "2022-03-30",
+      "username": "Jared",
+      "income": "10000000",
+      "rent": "20000",
+      "expenses": "20000",
+      "savings": "4503909",
       "id": 4
     },
     {
-      "formdata": {
-        "date": "2022-03-29",
-        "username": "Jaredg",
-        "income": "2000",
-        "rent": "200",
-        "expenses": "200",
-        "savings": "200"
-      },
+      "date": "yyyy-mm-dd",
+      "username": "Wes",
+      "income": "3000",
+      "rent": "2333",
+      "expenses": "23",
+      "savings": "2500",
       "id": 5
+    },
+    {
+      "date": "yyyy-mm-dd",
+      "username": "Jared",
+      "income": "122033",
+      "rent": "12",
+      "expenses": "123",
+      "savings": "40000",
+      "id": 6
+    },
+    {
+      "date": "yyyy-mm-dd",
+      "username": "Jared",
+      "income": "122033",
+      "rent": "12",
+      "expenses": "123",
+      "savings": "3003",
+      "id": 7
+    },
+    {
+      "date": "2022-03-09",
+      "username": "Jared",
+      "income": "122033",
+      "rent": "12",
+      "expenses": "123",
+      "savings": "3003",
+      "id": 8
+    },
+    {
+      "date": "2022-03-28",
+      "username": "Wes",
+      "income": "300",
+      "rent": "111",
+      "expenses": "11111",
+      "savings": "500",
+      "id": 9
+    },
+    {
+      "date": "2022-05-12",
+      "username": "wes",
+      "income": 0,
+      "rent": 0,
+      "expenses": 0,
+      "savings": "2000",
+      "id": 10
     }
   ]
 }
