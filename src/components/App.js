@@ -48,11 +48,9 @@ function App() {
             ml: 2,
           },
       }}>
-          
             <Link className='link' to="/financial"> Financial-Form </Link>
             <Link className='link' to="/investments"> Investments </Link>
             <Link className='link' to="/about"> About </Link>
-          
         </Box>
       <Outlet />
 
