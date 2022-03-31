@@ -5,14 +5,14 @@ import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
- let start = {
+let start = {
     date:"yyyy-mm-dd",
     username:"",
     income:0,
     rent:0,
     expenses:0,
     savings:0,
- }
+}
 
 
 

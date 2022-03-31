@@ -8,8 +8,6 @@ import Investments from "./Investments";
 import Container from '@mui/material/Container';
 
 function App() {  
-  // const [defaultLink, setDefaultLink] = useState(null)
-
   const [savings,setSavings]=useState([])
 
   useEffect( () => {
@@ -37,9 +35,20 @@ function App() {
    .catch( error => console.log(error.message));
   }
 
+  function eraseData(id) {
+    console.log(typeof id)
+    fetch(`http://localhost:3000/user/${id}`, {
+        method: "DELETE"
+    })
+    .then((res) => res.json())
+    .then((newData) => setSavings(savings.filter(saving => saving.id !== id)))
+    .catch( error => console.log(error.message));
+  }
+  
+
   return (
     <Container>
-      <Box sx={{
+      <Box margin="dense" sx={{
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'center',
@@ -57,7 +66,7 @@ function App() {
       <Routes>
             <Route path='/' element={<Navigate replace to='/financial'/>}/>
             <Route path="financial" element={<Form postData={postData}/>} />
-            <Route path="investments" element={<Investments savings={savings} />} />
+            <Route path="investments" element={<Investments savings={savings} eraseData={eraseData}/>} />
             <Route path="about" element={<About />} />
             <Route
               path="*"

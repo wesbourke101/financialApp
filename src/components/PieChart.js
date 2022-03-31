@@ -19,11 +19,11 @@ function PieChart({formData}) {
               '#6800B4'
             ],
             hoverBackgroundColor: [
-            '#501800',
-            '#4B5000',
-            '#175000',
-            '#003350',
-            '#35014F'
+                '#501800',
+                '#4B5000',
+                '#175000',
+                '#003350',
+                '#35014F'
             ],
             data: [formData.income, formData.rent, formData.expenses,formData.savings]
           }
