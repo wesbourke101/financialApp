@@ -2,33 +2,6 @@
   "user": [
     {
       "date": "yyyy-mm-dd",
-      "username": "tom",
-      "income": 0,
-      "rent": 0,
-      "expenses": 0,
-      "savings": "5000",
-      "id": 17
-    },
-    {
-      "date": "yyyy-mm-dd",
-      "username": "wes",
-      "income": 0,
-      "rent": 0,
-      "expenses": 0,
-      "savings": "1202020",
-      "id": 22
-    },
-    {
-      "date": "yyyy-mm-dd",
-      "username": "wes",
-      "income": 0,
-      "rent": 0,
-      "expenses": 0,
-      "savings": "300003",
-      "id": 23
-    },
-    {
-      "date": "yyyy-mm-dd",
       "username": "Tom",
       "income": "40000",
       "rent": "1222",
@@ -44,6 +17,33 @@
       "expenses": "23",
       "savings": "99999975",
       "id": 25
+    },
+    {
+      "date": "yyyy-mm-dd",
+      "username": "Tom",
+      "income": "2000",
+      "rent": "1000",
+      "expenses": "500",
+      "savings": "1750",
+      "id": 27
+    },
+    {
+      "date": "2022-03-29",
+      "username": "Wes",
+      "income": "4000",
+      "rent": "1750",
+      "expenses": "1000",
+      "savings": "3550",
+      "id": 28
+    },
+    {
+      "date": "2021-10-20",
+      "username": "Jared",
+      "income": "10000",
+      "rent": "1750",
+      "expenses": "2000",
+      "savings": "25700",
+      "id": 29
     }
   ]
 }
